@@ -91,7 +91,7 @@ def get_model(args):
             dropout_rate=args.dropout,
             pool=args.pool, pool_step_rate=args.pool_step_rate,
             idx_graph=idx_local_graph)
-    elif args.model == 'TDGCN':
+    elif args.model == 'TDGCN-TCN':
         model = TDGCN(
             num_classes=args.num_class, input_size=input_size,
             sampling_rate=args.target_rate,
